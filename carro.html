@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras</title>
+    <link rel="stylesheet" href="carro.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Imagen para mostrar el carrito -->
+        <img id="icono-carrito" src="https://via.placeholder.com/50" alt="Carrito" class="icono-carrito">
+
+        <aside id="carrito" class="carrito">
+            <h2>Carrito</h2>
+            <table id="tabla-carrito" class="table-carrito">
+                <thead>
+                    <tr>
+                        <th>Imagen</th>
+                        <th>Producto</th>
+                        <th>Precio</th>
+                        <th>Cantidad</th>
+                        <th>Total</th>
+                        <th>Acción</th>
+                    </tr>
+                </thead>
+                <tbody id="lista-carrito"></tbody>
+            </table>
+            <p>Total: <span id="total">0</span>€</p>
+            <button id="boton-vaciar">Vaciar Carrito</button>
+        </aside>
+
+        <!-- Imagen adicional -->
+        
+
+        <main id="productos" class="productos">
+            <!-- Producto estático añadido aquí -->
+            <div class="producto">
+                <img src="imagenes/agya.png" alt="Producto 1">
+                <h3>Producto 1</h3>
+                <p>10€</p>
+                <button onclick="anyadirProducto(1)">Agregar al Carrito</button>
+            </div>
+
+            <!-- Agregando un segundo producto estático -->
+            <div class="producto">
+                <img src="https://via.placeholder.com/150" alt="Producto 2">
+                <h3>Producto 2</h3>
+                <p>15€</p>
+                <button onclick="anyadirProducto(2)">Agregar al Carrito</button>
+            </div>
+
+            <!-- Agregando un tercer producto estático -->
+            <div class="producto">
+                <img src="https://via.placeholder.com/150" alt="Producto 3">
+                <h3>Producto 3</h3>
+                <p>20€</p>
+                <button onclick="anyadirProducto(3)">Agregar al Carrito</button>
+            </div>
+
+            <!-- Productos se agregarán aquí dinámicamente -->
+        </main>
+    </div>
+
+    <script src="carro.js"></script>
+</body>
+</html>

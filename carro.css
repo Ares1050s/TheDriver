@@ -1,0 +1,58 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+}
+
+.icono-carrito {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.carrito {
+    position: fixed;
+    top: 70px; /* Ajustado para que no se superponga con el icono */
+    right: 40px; /* Cambiado a 'right' para posicionar a la derecha */
+    width: 420px;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+    display: none; /* Oculto por defecto */
+    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+}
+
+.table-carrito {
+    width: 300px;
+    border-collapse: collapse;
+}
+
+.table-carrito th, .table-carrito td {
+    border: 1px solid #f03131;
+    padding: 5px;
+    text-align: center;
+}
+
+.productos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin: auto;
+}
+
+.producto {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.producto img {
+    width: 100%;
+}
+
+.producto button {
+    background-color: #28a745;
+    color: white;
+}

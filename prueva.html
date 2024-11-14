@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reproducción de Video</title>
+    <link rel="stylesheet" href="prueva.css">
+</head>
+<body>
+    <video id="myVideo" autoplay muted>
+        <source src="imagenes/lv_7365624269537037575_20240807234824.mp4" type="video/mp4">
+        Tu navegador no soporta el video.
+    </video>
+
+    <script>
+        const video = document.getElementById('myVideo');
+        video.onended = function() {
+            document.body.innerHTML = '';
+            window.location.href = 'theDriver.html';
+        };
+    </script>
+</body>
+</html>
